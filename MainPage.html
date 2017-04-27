@@ -25,10 +25,23 @@
 </head>
 <body>
 
-<div class="container">
-    <h2>Task Overview</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Task Cracker</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#TaskTable">Overview</a></li>
+      <li><a href="About.html">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="padding-top: 100px">
+    <h2 id="TaskTable">Task Overview</h2>
     <p>The project includes the following TODO tasks           
     </p>
+
     <a href="CreateNewTODO.html" class="btn btn-info" role="button">Create New Todo</a>
 
     <div class="container">
@@ -64,7 +77,7 @@
                 </td>
                 <td>
                     <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-edit"></span> Edit
+                       <a href="EditTODO.html"> <span class="glyphicon glyphicon-edit"></span> Edit</a>
                     </button>
                     <button type="button" class="btn btn-default btn-sm">
                         <span class="glyphicon glyphicon-remove-sign"></span> Remove
@@ -92,7 +105,7 @@
                 </td>
                 <td>
                     <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-edit"></span> Edit
+                       <a href="EditTODO.html"> <span class="glyphicon glyphicon-edit"></span> Edit</a>
                     </button>
                     <button type="button" class="btn btn-default btn-sm">
                         <span class="glyphicon glyphicon-remove-sign"></span> Remove
@@ -134,17 +147,10 @@
             
             </tbody>
         </table>
-        <div class="container-fluid bg-grey">
-            <h2 class="text-left" >Authors</h2>
-            <div class="text-left">
-                <p>Contact us and we'll get back to you within 24 hours.</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Berlin, Germany</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +0049111111</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> evazhouqiao@gmail.com</p>
-            </div>
-        </div>
+        
     </div>
 </div>
+
 <script type="text/javascript">
     $('.input-append').datetimepicker({
         format: 'dd/MM/yyyy',
