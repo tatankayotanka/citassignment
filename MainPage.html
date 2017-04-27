@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-  <h2>Task Overview</h2>
-  <p>The project includes the following to-to tasks</p>            
-  <table class="table">
-    <thead>
-      <tr>
-        <th>To-Do</th>
-        <th>Assignee</th>
-        <th>Progress</th>
-        <th>Operations</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Task 1</td>
-        <td>Name 1</td>  
-        <td>
-           <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:100%">
-              <span class="sr-only">10% Complete</span>
-             </div>
-          </div>
-        </td>
-        <td>
-          <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-edit"></span> Edit
-          </button>
-          <button type="button" class="btn btn-default btn-sm">
-           <span class="glyphicon glyphicon-remove-sign"></span> Remove
-         </button>
-        </td>
-      </tr>
-      <tr>
-        <td>Task 2</td>
-        <td>Name 2</td>
-        <td>
-          <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:40%">
-              <span class="sr-only">100% Complete</span>
-             </div>
-          </div>
-        </td>
-        <td>
-           <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-edit"></span> Edit
-          </button>
-          <button type="button" class="btn btn-default btn-sm">
-           <span class="glyphicon glyphicon-remove-sign"></span> Remove
-         </button>
-        </td>
+    <h2>Task Overview</h2>
+    <p>The project includes the following to-to tasks</p>
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>To-Do</th>
+                <th>Assignee</th>
+                <th>Progress</th>
+                <th>Operations</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Task 1</td>
+                <td>Name 1</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            50% Complete
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-edit"></span> Edit
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-remove-sign"></span> Remove
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Task 2</td>
+                <td>Name 2</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            40% Complete
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-edit"></span> Edit
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-remove-sign"></span> Remove
+                    </button>
+                </td>
 
+<<<<<<< HEAD
       </tr>
       <tr>
         <td>Task 3</td>
@@ -86,7 +88,41 @@
       </tr>
     </tbody>
   </table>
+=======
+            </tr>
+            <tr>
+                <td>Task 3</td>
+                <td>Name 3</td>
+                <td>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            50% Complete (danger)
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-edit"></span> Edit
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-remove-sign"></span> Remove
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid bg-grey">
+            <h2 class="text-left" >Authors</h2>
+            <div class="text-left">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Berlin, Germany</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +0049</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> evazhouqiao@gmail.com</p>
+            </div>
+        </div>
+    </div>
+>>>>>>> a112c40d31189e240cc869d92b9c642c7c6eeeae
 </div>
-
 </body>
 </html>
