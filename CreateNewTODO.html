@@ -17,7 +17,6 @@
 
 </head>
 
-
 <body>
 <div class="container-fluid">
     <div class="row">
@@ -50,9 +49,9 @@
                 <label class="control-label" for="date">Due date:</label>
                 <div class='input-group date' name="date">
                 <span class="input-group-addon" name="date">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+                <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text"/>
                 <script>
                     $(document).ready(function(){
                         var date_input=$('input[name="date"]'); //our date input has the name "date"
@@ -71,6 +70,11 @@
                 </script>
                 </div>
             </div>
+
+            <!-- Save and Cancel buttons-->
+
+
+
         </div>
     </div>
 </div>
