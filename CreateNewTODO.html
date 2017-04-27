@@ -3,13 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Create TODO</title>
+
+    <!--If not specified others, the bootstrap elements taken from https://www.w3schools.com/bootstrap/default.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Date-picker comes from here: https://formden.com/blog/date-picker -->
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
 </head>
+
+
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- Page header -->
+            <div class="page-header">
+                <h1>Create new task</h1>
+            </div>
 
-
+            <!-- Form group -->
+            <div class="form-group">
+                <!-- Task title - small input field-->
+                <label for="title">Task title:</label>
+                <input type="text" class="form-control" id="title">
+                <br>
+                <!-- Task description - wide input field -->
+                <label for="comment">Description:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <br>
+                <!-- Assignee - drop-down list -->
+                <label for="sel1">Assignee:</label>
+                <select class="form-control" id="sel1">
+                    <option>(Not assigned)</option>
+                    <option>User 1</option>
+                    <option>User 2</option>
+                    <option>User 3</option>
+                </select>
+                <br>
+                <!-- Due date - Calendar input -->
+                <label class="control-label" for="date">Due date:</label>
+                <div class='input-group date' name="date">
+                <span class="input-group-addon" name="date">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                <script>
+                    $(document).ready(function(){
+                        var date_input=$('input[name="date"]'); //our date input has the name "date"
+                        var date_span=$('span[name="date"]');
+                        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                        var options={
+                            format: 'dd/mm/yyyy',
+                            container: container,
+                            todayHighlight: true,
+                            orientation: "top left",
+                            autoclose: true
+                        };
+                      //  date_input.datepicker(options);
+                        date_span.datepicker(options);
+                    })
+                </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
