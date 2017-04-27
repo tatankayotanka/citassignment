@@ -5,8 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript"
+            src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+    </script>
 </head>
 <body>
 
@@ -17,16 +32,25 @@
         <table class="table">
             <thead>
             <tr>
-                <th>TODO</th>
-                <th>Assignee</th>
+                <th>To-Do</th>
+                <th>Deadline</th>
                 <th>Progress</th>
                 <th>Operations</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <td>Task 1</td>
-                <td>Name 1</td>
+                <td width="100px">Task 1</td>
+                <td>
+                    <div id="datetimepicker" class="input-append date">
+                        <input type="text"></input>
+                        <span class="add-on">
+                        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                        </span>
+                    </div>
+
+
+                </td>
                 <td>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -46,7 +70,15 @@
             </tr>
             <tr>
                 <td>Task 2</td>
-                <td>Name 2</td>
+                <td>
+                    <div id="datetimepicker1" class="input-append date">
+                        <input type="text"></input>
+                        <span class="add-on">
+                        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                        </span>
+                    </div>
+
+                </td>
                 <td>
                     <div class="progress">
                         <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70"
@@ -63,24 +95,31 @@
                         <span class="glyphicon glyphicon-remove-sign"></span> Remove
                     </button>
                 </td>
-
-<<<<<<< HEAD
       </tr>
       <tr>
         <td>Task 3</td>
-        <td>Name 3</td>
         <td>
-          <div class="progress">
-             <div class="progress-bar" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100" style="width:55%">
-              <span class="sr-only">100% Complete</span>
-             </div>
-          </div>
+            <div id="datetimepicker2" class="input-append date">
+                <input type="text"></input>
+                <span class="add-on">
+                        <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                        </span>
+            </div>
+
+        </td>
+        <td>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                     aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                    20% Complete
+                </div>
+            </div>
         </td>
         <td>
            <button type="button" class="btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-edit"></span> Edit
-          </button>
+               <a href="EditTODO.html">
+               <span class="glyphicon glyphicon-edit"></span> Edit</a>
+           </button>
           <button type="button" class="btn btn-default btn-sm">
            <span class="glyphicon glyphicon-remove-sign"></span> Remove
          </button>
@@ -88,28 +127,8 @@
       </tr>
     </tbody>
   </table>
-=======
             </tr>
-            <tr>
-                <td>Task 3</td>
-                <td>Name 3</td>
-                <td>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70"
-                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                            50% Complete (danger)
-                        </div>
-                    </div>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-edit"></span> Edit
-                    </button>
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-remove-sign"></span> Remove
-                    </button>
-                </td>
-            </tr>
+            
             </tbody>
         </table>
         <div class="container-fluid bg-grey">
@@ -117,12 +136,17 @@
             <div class="text-left">
                 <p>Contact us and we'll get back to you within 24 hours.</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Berlin, Germany</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +0049</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +0049111111</p>
                 <p><span class="glyphicon glyphicon-envelope"></span> evazhouqiao@gmail.com</p>
             </div>
         </div>
     </div>
->>>>>>> a112c40d31189e240cc869d92b9c642c7c6eeeae
 </div>
+<script type="text/javascript">
+    $('.input-append').datetimepicker({
+        format: 'dd/MM/yyyy',
+        language: 'EN'
+    });
+</script>
 </body>
 </html>
