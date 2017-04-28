@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -50,11 +50,12 @@
 
 
 
-    <div class="container">
+    <div class="container-fluid">
         <table class="table">
             <thead>
             <tr>
                 <th>To-Do</th>
+                <th>Assignee</th>
                 <th>Deadline</th>
                 <th>Progress</th>
                 <th>Operations</th>
@@ -63,6 +64,14 @@
             <tbody>
             <tr>
                 <td width="100px">Task 1</td>
+                <td>
+                    <select class="selectpicker" data-style="btn-primary" data-size="3">
+                         <option hidden>User 1</option>
+                         <option>User 1</option>
+                         <option>User 2</option>
+                         <option>User 3</option>
+                    </select>
+                </td>
                 <td>
                     <div id="datetimepicker" class="input-append date">
                         <input type="text"></input>
@@ -91,7 +100,17 @@
                 </td>
             </tr>
             <tr>
-                <td>Task 2</td>
+                <td >Task 2</td>
+                <td >
+               <!-- <input type="text" value="User 2">-->
+                <select class="selectpicker" data-style="btn-primary" data-size="3">
+                    <option hidden>User 2</option>
+                    <option>User 1</option>
+                    <option>User 2</option>
+                    <option>User 3</option>
+                </select>
+
+                </td>
                 <td>
                     <div id="datetimepicker1" class="input-append date">
                         <input type="text"></input>
@@ -120,6 +139,14 @@
       </tr>
       <tr>
         <td>Task 3</td>
+        <td>
+            <select class="selectpicker" data-style="btn-primary" data-size="3">
+                    <option hidden>User 3</option>
+                    <option>User 1</option>
+                    <option>User 2</option>
+                    <option>User 3</option>
+            </select>
+        </td>
         <td>
             <div id="datetimepicker2" class="input-append date">
                 <input type="text"></input>
