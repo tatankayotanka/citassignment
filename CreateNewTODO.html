@@ -19,7 +19,7 @@
 
 <body>
 
-<div class="container-fluid" name="main_container">
+<div class="container" name="main_container">
     <div class="row">
         <div class="col-sm-12">
             <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -28,7 +28,7 @@
                         <a class="navbar-brand" href="MainPage.html">Task Cracker</a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#TaskTable">Overview</a></li>
+                        <li class="active"><a href="MainPage.html#TaskTable">Overview</a></li>
                         <li><a href="About.html">Contact Us</a></li>
                     </ul>
                 </div>
@@ -61,9 +61,6 @@
                 <!-- Due date - Calendar input -->
                 <label class="control-label" for="date">Due date:</label>
                 <div class='input-group date' name="date">
-                <span class="input-group-addon" name="date">
-                    <span class="glyphicon glyphicon-calendar"></span>
-                </span>
                 <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text"/>
                 <script>
                     $(document).ready(function(){
@@ -77,8 +74,8 @@
                             orientation: "bottom left",
                             autoclose: true
                         };
-                        date_input.datepicker(options);
-                        //date_span.datepicker(options);
+                       date_input.datepicker(options);
+                       // date_span.datepicker(options);
                     })
                 </script>
                 </div>

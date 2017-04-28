@@ -17,6 +17,77 @@
 </head>
 
 <body>
+<div class="container" name="main_container">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="MainPage.html">Task Cracker</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="MainPage.html#TaskTable">Overview</a></li>
+                        <li><a href="About.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <br><br>
+            <!-- Page header -->
+            <div class="page-header">
+                <h1>Edit Task 3</h1>
+            </div>
 
+            <!-- Form group -->
+            <div class="form-group">
+                <!-- Task title - small input field-->
+                <label for="title">Task title:</label>
+                <input type="text" class="form-control" id="title" placeholder="Task 3">
+                <br>
+                <!-- Task description - wide input field -->
+                <label for="comment">Description:</label>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Description for task 3."></textarea>
+                <br>
+                <!-- Assignee - drop-down list -->
+                <label for="sel1">Assignee:</label>
+                <select class="form-control" id="sel1">
+                    <option>User 3</option>
+                    <option>(Not assigned)</option>
+                    <option>User 1</option>
+                    <option>User 2</option>
+                </select>
+                <br>
+                <!-- Due date - Calendar input -->
+                <label class="control-label" for="date">Due date:</label>
+                <div class='input-group date' name="date">
+                    <input class="form-control" id="date" name="date" placeholder="31/06/2017" type="text"/>
+                    <script>
+                        $(document).ready(function(){
+                            var date_input=$('input[name="date"]'); //our date input has the name "date"
+                            var date_span=$('span[name="date"]');
+                            var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                            var options={
+                                format: 'dd/mm/yyyy',
+                                container: container,
+                                todayHighlight: true,
+                                orientation: "bottom left",
+                                autoclose: true
+                            };
+                            date_input.datepicker(options);
+                            //date_span.datepicker(options);
+                        })
+                    </script>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Save and Cancel buttons-->
+            <div name="buttons">
+                <a href="MainPage.html" class="btn btn-success" role="button">Save Changes</a>
+                <a href="MainPage.html" class="btn btn-danger" role="button">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
