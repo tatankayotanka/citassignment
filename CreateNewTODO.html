@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Create TODO</title>
+    <title>Create New Task</title>
 
     <!--If not specified others, the bootstrap elements taken from https://www.w3schools.com/bootstrap/default.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +28,9 @@
                         <a class="navbar-brand" href="MainPage.html">Task Cracker</a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="MainPage.html#TaskTable">Overview</a></li>
+                        <li><a href="MainPage.html#TaskTable">Overview</a></li>
                         <li><a href="About.html">Contact Us</a></li>
+                        <li class="active"><a href="#">Create New Task</a></li>
                     </ul>
                 </div>
             </nav>
@@ -65,7 +66,7 @@
                 <script>
                     $(document).ready(function(){
                         var date_input=$('input[name="date"]'); //our date input has the name "date"
-                        var date_span=$('span[name="date"]');
+                       // var date_span=$('span[name="date"]');
                         var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
                         var options={
                             format: 'dd/mm/yyyy',
