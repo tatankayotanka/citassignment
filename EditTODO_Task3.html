@@ -41,11 +41,15 @@
             <div class="form-group">
                 <!-- Task title - small input field-->
                 <label for="title">Task title:</label>
-                <input type="text" class="form-control" id="title" placeholder="Task 3">
+                <input type="text" class="form-control" id="title" value="Task 3">
                 <br>
                 <!-- Task description - wide input field -->
                 <label for="comment">Description:</label>
-                <textarea class="form-control" rows="5" id="comment">Description for task 3.</textarea>
+                <textarea class="form-control" rows="5" id="comment">Task 3 description:
+As a user, I want the Software to bring me more value so that I am happy about it.
+Acceptance criteria:
+1. The best user experience is provided.
+2. User happiness verified. </textarea>
                 <br>
                 <!-- Assignee - drop-down list -->
                 <label for="sel1">Assignee:</label>
@@ -67,7 +71,7 @@
                 <!-- Due date - Calendar input -->
                 <label class="control-label" for="date">Due date:</label>
                 <div class='input-group date' name="date">
-                    <input class="form-control" id="date" name="date" placeholder="31/06/2017" type="text"/>
+                    <input class="form-control" id="date" name="date" value="31/06/2017" type="text"/>
                     <script>
                         $(document).ready(function(){
                             var date_input=$('input[name="date"]'); //our date input has the name "date"
