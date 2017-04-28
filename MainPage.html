@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen"
           href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -25,26 +25,32 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Task Cracker</a>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="MainPage.html">Task Cracker</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#TaskTable">Overview</a></li>
+                <li><a href="About.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav> <br><br><br><br>
+    <h1 id="TaskTable">Task Overview</h1>
+    <div class="row">
+        <div class="col-sm-8" style="background-color:white;">
+            <h4>The project includes the following TODO tasks</h4>
+        </div>
+        <div class="col-sm-4" style="background-color:white;">
+            <a href="CreateNewTODO.html" class="btn btn-primary btn-lg" role="button">Create New Task</a>
+        </div>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#TaskTable">Overview</a></li>
-      <li><a href="About.html">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
+</div>
 
-<div class="container" style="padding-top: 100px">
-    <h2 id="TaskTable">Task Overview</h2>
-    <p>The project includes the following TODO tasks           
-    </p>
 
-    <a href="CreateNewTODO.html" class="btn btn-info" role="button">Create New Todo</a>
 
-    <div class="container">
+    <div class="container-fluid">
         <table class="table">
             <thead>
             <tr>

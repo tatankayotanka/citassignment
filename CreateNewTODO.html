@@ -18,9 +18,22 @@
 </head>
 
 <body>
-<div class="container-fluid">
+
+<div class="container-fluid" name="main_container">
     <div class="row">
         <div class="col-sm-12">
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="MainPage.html">Task Cracker</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#TaskTable">Overview</a></li>
+                        <li><a href="About.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <br><br>
             <!-- Page header -->
             <div class="page-header">
                 <h1>Create new task</h1>
@@ -61,20 +74,24 @@
                             format: 'dd/mm/yyyy',
                             container: container,
                             todayHighlight: true,
-                            orientation: "top left",
+                            orientation: "bottom left",
                             autoclose: true
                         };
-                      //  date_input.datepicker(options);
-                        date_span.datepicker(options);
+                        date_input.datepicker(options);
+                        //date_span.datepicker(options);
                     })
                 </script>
                 </div>
             </div>
+            <br>
+            <br>
 
             <!-- Save and Cancel buttons-->
-
-
-
+            <div name="buttons">
+                <a href="MainPage.html" class="btn btn-success" role="button">Save Task</a>
+                <a href="CreateNewTODO.html" class="btn btn-primary" role="button">Save and Create Another</a>
+                <a href="MainPage.html" class="btn btn-danger" role="button">Cancel</a>
+            </div>
         </div>
     </div>
 </div>
